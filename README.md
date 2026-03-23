@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Splunk AI SOC Copilot
 
 An end-to-end SOC triage prototype that integrates **Splunk detections** with **structured AI analysis** to accelerate analyst workflows.
@@ -132,3 +133,7 @@ reports/
   alerts_enriched.json
   tickets/
   AI_SOC_Copilot_Report.pdf
+=======
+# splunk-ai-soc-copilot
+Splunk + AI SOC triage pipeline with alert enrichment, analyst workflow, and ticket/PDF reporting.
+>>>>>>> 50b7778caf459f7d3e76857d95e18f2a6d62091e
