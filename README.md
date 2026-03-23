@@ -28,6 +28,11 @@ This project demonstrates a practical approach:
 
 ---
 
+## Dashboard Preview
+
+![AI SOC Copilot Dashboard](assets/dashboard-overview.png)
+
+
 ## Core features
 
 ### 1) Multi-detection pipeline
