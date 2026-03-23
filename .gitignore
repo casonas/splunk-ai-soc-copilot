@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 reports/
 !reports/README.md
+
+data/raw/
+!data/raw/README.md
