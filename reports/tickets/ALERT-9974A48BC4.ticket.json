@@ -1,0 +1,42 @@
+{
+  "ticket_id": "TICKET-ALERT-9974A48BC4",
+  "alert_id": "ALERT-9974A48BC4",
+  "title": "Possible Lateral Movement - HIGH",
+  "status": "open",
+  "severity": "high",
+  "mitre_id": "T1021",
+  "iocs": {
+    "source_ip": "-",
+    "account_name": "-",
+    "hosts": [
+      "mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy"
+    ]
+  },
+  "rule_confidence": 0.88,
+  "ai_confidence": 0.88,
+  "summary": {
+    "what_happened": "Possible Lateral Movement detected",
+    "why_it_matters": "High severity alert indicating potential security breach"
+  },
+  "recommended_actions": [
+    "Validate account activity across listed hosts",
+    "Isolate suspected pivot host(s)",
+    "Review 4624/4672 chain and disable compromised credentials"
+  ],
+  "analyst": {
+    "label": "Needs Review",
+    "note": ""
+  },
+  "evidence": {
+    "host_count": 5,
+    "raw_row": {
+      "Account_Name": "-",
+      "Source_Network_Address": "-",
+      "_time": "2017-08-19 06:00:00.000 Eastern Daylight Time",
+      "host_count": "5",
+      "hosts": "mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy",
+      "event_count": "95"
+    }
+  },
+  "timestamp": "2026-03-23T21:50:19.390248Z"
+}

@@ -1,0 +1,40 @@
+{
+  "ticket_id": "TICKET-ALERT-D34A525F73",
+  "alert_id": "ALERT-D34A525F73",
+  "title": "Suspicious PowerShell Execution - LOW",
+  "status": "open",
+  "severity": "low",
+  "mitre_id": "T1059.001",
+  "iocs": {
+    "source_ip": null,
+    "account_name": "service3",
+    "hosts": []
+  },
+  "rule_confidence": 0.6,
+  "ai_confidence": 0.6,
+  "summary": {
+    "what_happened": "Suspicious PowerShell Execution on host venus",
+    "why_it_matters": "Potential remote payload execution detected"
+  },
+  "recommended_actions": [
+    "Isolate host if command indicates remote payload execution",
+    "Collect PowerShell script block logs and parent process chain",
+    "Disable/rotate affected credentials and hunt for same command pattern"
+  ],
+  "analyst": {
+    "label": "Needs Review",
+    "note": ""
+  },
+  "evidence": {
+    "process_command_line": "[REDACTED]",
+    "event_count": 1,
+    "raw_row": {
+      "host": "venus",
+      "Account_Name": "service3",
+      "New_Process_Name": "C:\\Windows\\System32\\schtasks.exe",
+      "Parent_Process_Name": "",
+      "Process_Command_Line": "[REDACTED]"
+    }
+  },
+  "timestamp": "2026-03-23T21:50:19.390170Z"
+}

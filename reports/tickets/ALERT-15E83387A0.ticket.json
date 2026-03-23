@@ -1,0 +1,40 @@
+{
+  "ticket_id": "TICKET-ALERT-15E83387A0",
+  "alert_id": "ALERT-15E83387A0",
+  "title": "Suspicious PowerShell Execution - LOW",
+  "status": "open",
+  "severity": "low",
+  "mitre_id": "T1059.001",
+  "iocs": {
+    "source_ip": null,
+    "account_name": "billy.tun",
+    "hosts": []
+  },
+  "rule_confidence": 0.6,
+  "ai_confidence": 0.6,
+  "summary": {
+    "what_happened": "Suspicious PowerShell Execution on wrk-btun by billy.tun",
+    "why_it_matters": "Potential remote payload execution detected"
+  },
+  "recommended_actions": [
+    "Isolate host if command indicates remote payload execution",
+    "Collect PowerShell script block logs and parent process chain",
+    "Disable/rotate affected credentials and hunt for same command pattern"
+  ],
+  "analyst": {
+    "label": "Needs Review",
+    "note": ""
+  },
+  "evidence": {
+    "process_command_line": "[REDACTED]",
+    "event_count": 1,
+    "raw_row": {
+      "host": "wrk-btun",
+      "Account_Name": "billy.tun",
+      "New_Process_Name": "C:\\Windows\\System32\\schtasks.exe",
+      "Parent_Process_Name": "",
+      "Process_Command_Line": "[REDACTED]"
+    }
+  },
+  "timestamp": "2026-03-23T21:50:19.390134Z"
+}

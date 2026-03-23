@@ -1,0 +1,27 @@
+"Account_Name","Source_Network_Address","_time","host_count",hosts,"event_count"
+"-","::1","2017-08-19T00:00:00.000-0400",8,"mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",40
+"-","::1","2017-08-19T07:00:00.000-0400",7,"mercury venus wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",40
+"-","::1","2017-08-23T23:00:00.000-0400",7,"mercury venus wrk-aturing wrk-bgist wrk-btun wrk-ghoppy wrk-klagerf",38
+"-","10.0.2.107","2017-08-23T23:00:00.000-0400",7,"mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",37
+"-","10.0.2.107","2017-08-26T01:00:00.000-0400",7,"mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",23
+"billy.tun","10.0.2.107","2017-08-23T23:00:00.000-0400",7,"mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",15
+"billy.tun","10.0.2.107","2017-08-26T01:00:00.000-0400",7,"mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",10
+"-","::1","2017-08-18T19:00:00.000-0400",6,"mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-ghoppy",39
+"-","::1","2017-08-19T01:00:00.000-0400",6,"mercury wrk-aturing wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",39
+"-","::1","2017-08-18T20:00:00.000-0400",6,"mercury wrk-aturing wrk-bgist wrk-btun wrk-fmaltes wrk-klagerf",38
+"-","::1","2017-08-18T22:00:00.000-0400",6,"mercury wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",38
+"-","::1","2017-08-19T03:00:00.000-0400",6,"mercury wrk-aturing wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",38
+"-","::1","2017-08-19T05:00:00.000-0400",6,"mercury wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",38
+"-","::1","2017-08-26T02:00:00.000-0400",6,"mercury venus wrk-abungst wrk-aturing wrk-ghoppy wrk-klagerf",38
+service3,"10.0.2.107","2017-08-23T23:00:00.000-0400",6,"mercury venus wrk-abungst wrk-aturing wrk-fmaltes wrk-klagerf",9
+"-","-","2017-08-18T22:00:00.000-0400",5,"mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy",95
+"-","-","2017-08-19T06:00:00.000-0400",5,"mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy",95
+"-","::1","2017-08-18T17:00:00.000-0400",5,"mercury venus wrk-abungst wrk-aturing wrk-bgist",37
+"-","::1","2017-08-18T18:00:00.000-0400",5,"mercury wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",37
+"-","::1","2017-08-19T04:00:00.000-0400",5,"mercury venus wrk-abungst wrk-bgist wrk-btun",37
+"-","::1","2017-08-19T06:00:00.000-0400",5,"mercury venus wrk-abungst wrk-aturing wrk-btun",37
+"-","::1","2017-08-19T08:00:00.000-0400",5,"mercury wrk-aturing wrk-bgist wrk-btun wrk-klagerf",37
+"-","::1","2017-08-19T09:00:00.000-0400",5,"mercury venus wrk-abungst wrk-fmaltes wrk-ghoppy",37
+"-","::1","2017-08-26T03:00:00.000-0400",5,"mercury wrk-abungst wrk-bgist wrk-btun wrk-fmaltes",37
+"-","::1","2017-08-18T21:00:00.000-0400",5,"mercury venus wrk-abungst wrk-btun wrk-ghoppy",35
+"-","-","2017-08-25T01:00:00.000-0400",5,"mercury wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",5

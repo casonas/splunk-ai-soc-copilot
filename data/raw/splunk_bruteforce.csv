@@ -1,0 +1,8 @@
+"Account_Name","Source_Network_Address",count,hosts
+"-","10.0.1.100",3162,mercury
+"MERCURY$","10.0.1.100",3162,mercury
+Administrator,"10.0.1.220",109,mercury
+"MERCURY$","10.0.1.220",109,mercury
+Guest,"-",53,venus
+administrator,"-",53,venus
+"-","172.16.0.1",14,venus
