@@ -1,0 +1,2516 @@
+[
+  {
+    "alert_id": "ALERT-A68F6D6D1F",
+    "timestamp": "2026-03-23T22:51:50.214524Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "Critical",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "10.0.1.100",
+      "target_hosts": [
+        "mercury"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 3162
+    },
+    "rule_confidence": 0.98,
+    "ai_confidence": 0.98,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login failures detected",
+      "why_it_matters": "Potential security breach, may indicate compromised account or unauthorized access",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.98
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214524Z - Alert triggered: Brute-force Login Failures (CRITICAL)",
+      "2026-03-23T22:51:50.214524Z - Repeated failed logins observed from 10.0.1.100 targeting account - (failed_attempts=3162)",
+      "2026-03-23T22:51:50.214524Z - AI summary: Brute-force login failures detected",
+      "2026-03-23T22:51:50.214524Z - Risk context: Potential security breach, may indicate compromised account or unauthorized access",
+      "2026-03-23T22:51:50.214524Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214524Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214524Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-8B66A88B27",
+    "timestamp": "2026-03-23T22:51:50.214616Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "Critical",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "MERCURY$",
+      "source_ip": "10.0.1.100",
+      "target_hosts": [
+        "mercury"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 3162
+    },
+    "rule_confidence": 0.98,
+    "ai_confidence": 0.98,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login attempts detected on account MERCURY$",
+      "why_it_matters": "Potential security breach, may indicate compromised credentials or unauthorized access",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.98
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214616Z - Alert triggered: Brute-force Login Failures (CRITICAL)",
+      "2026-03-23T22:51:50.214616Z - Repeated failed logins observed from 10.0.1.100 targeting account MERCURY$ (failed_attempts=3162)",
+      "2026-03-23T22:51:50.214616Z - AI summary: Brute-force login attempts detected on account MERCURY$",
+      "2026-03-23T22:51:50.214616Z - Risk context: Potential security breach, may indicate compromised credentials or unauthorized access",
+      "2026-03-23T22:51:50.214616Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214616Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214616Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-22ABC2CD85",
+    "timestamp": "2026-03-23T22:51:50.214654Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "High",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "Administrator",
+      "source_ip": "10.0.1.220",
+      "target_hosts": [
+        "mercury"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 109
+    },
+    "rule_confidence": 0.9,
+    "ai_confidence": 0.9,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login attempts detected for Administrator",
+      "why_it_matters": "High severity alert indicating potential security compromise",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.9
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214654Z - Alert triggered: Brute-force Login Failures (HIGH)",
+      "2026-03-23T22:51:50.214654Z - Repeated failed logins observed from 10.0.1.220 targeting account Administrator (failed_attempts=109)",
+      "2026-03-23T22:51:50.214654Z - AI summary: Brute-force login attempts detected for Administrator",
+      "2026-03-23T22:51:50.214654Z - Risk context: High severity alert indicating potential security compromise",
+      "2026-03-23T22:51:50.214654Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214654Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214654Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-149614BE48",
+    "timestamp": "2026-03-23T22:51:50.214676Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "High",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "MERCURY$",
+      "source_ip": "10.0.1.220",
+      "target_hosts": [
+        "mercury"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 109
+    },
+    "rule_confidence": 0.9,
+    "ai_confidence": 0.9,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login failures detected",
+      "why_it_matters": "Potential security breach, may indicate compromised account or unauthorized access",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.9
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214676Z - Alert triggered: Brute-force Login Failures (HIGH)",
+      "2026-03-23T22:51:50.214676Z - Repeated failed logins observed from 10.0.1.220 targeting account MERCURY$ (failed_attempts=109)",
+      "2026-03-23T22:51:50.214676Z - AI summary: Brute-force login failures detected",
+      "2026-03-23T22:51:50.214676Z - Risk context: Potential security breach, may indicate compromised account or unauthorized access",
+      "2026-03-23T22:51:50.214676Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214676Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214676Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-363835BDED",
+    "timestamp": "2026-03-23T22:51:50.214696Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "Medium",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "Guest",
+      "source_ip": "-",
+      "target_hosts": [
+        "venus"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 53
+    },
+    "rule_confidence": 0.75,
+    "ai_confidence": 0.75,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login failures detected",
+      "why_it_matters": "Potential security breach via brute-force login attempts",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.75
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214696Z - Alert triggered: Brute-force Login Failures (MEDIUM)",
+      "2026-03-23T22:51:50.214696Z - Repeated failed logins observed from - targeting account Guest (failed_attempts=53)",
+      "2026-03-23T22:51:50.214696Z - AI summary: Brute-force login failures detected",
+      "2026-03-23T22:51:50.214696Z - Risk context: Potential security breach via brute-force login attempts",
+      "2026-03-23T22:51:50.214696Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214696Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214696Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-58AAEAD123",
+    "timestamp": "2026-03-23T22:51:50.214714Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "Medium",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "administrator",
+      "source_ip": "-",
+      "target_hosts": [
+        "venus"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 53
+    },
+    "rule_confidence": 0.75,
+    "ai_confidence": 0.75,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login failures detected",
+      "why_it_matters": "Potential security breach via unauthorized login attempts",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.75
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214714Z - Alert triggered: Brute-force Login Failures (MEDIUM)",
+      "2026-03-23T22:51:50.214714Z - Repeated failed logins observed from - targeting account administrator (failed_attempts=53)",
+      "2026-03-23T22:51:50.214714Z - AI summary: Brute-force login failures detected",
+      "2026-03-23T22:51:50.214714Z - Risk context: Potential security breach via unauthorized login attempts",
+      "2026-03-23T22:51:50.214714Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214714Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214714Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-553D31F946",
+    "timestamp": "2026-03-23T22:51:50.214733Z",
+    "detection_type": "Brute-force Login Failures",
+    "severity": "Low",
+    "mitre_technique": "T1110",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "172.16.0.1",
+      "target_hosts": [
+        "venus"
+      ]
+    },
+    "evidence": {
+      "failed_attempts": 14
+    },
+    "rule_confidence": 0.5,
+    "ai_confidence": 0.5,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Temporarily disable or challenge the targeted account",
+      "Block or rate-limit source IP at firewall/WAF",
+      "Force password reset and verify MFA enrollment",
+      "Review successful logons from same source in adjacent time window"
+    ],
+    "ai_summary": {
+      "what_happened": "Brute-force login failures detected",
+      "why_it_matters": "Potential security risk due to repeated login attempts",
+      "top_3_actions": [
+        "Temporarily disable or challenge the targeted account",
+        "Block or rate-limit source IP at firewall/WAF",
+        "Force password reset and verify MFA enrollment"
+      ],
+      "mitre_mapping": [
+        "T1110"
+      ],
+      "confidence": 0.5
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214733Z - Alert triggered: Brute-force Login Failures (LOW)",
+      "2026-03-23T22:51:50.214733Z - Repeated failed logins observed from 172.16.0.1 targeting account - (failed_attempts=14)",
+      "2026-03-23T22:51:50.214733Z - AI summary: Brute-force login failures detected",
+      "2026-03-23T22:51:50.214733Z - Risk context: Potential security risk due to repeated login attempts",
+      "2026-03-23T22:51:50.214733Z - Recommended action 1: Temporarily disable or challenge the targeted account",
+      "2026-03-23T22:51:50.214733Z - Recommended action 2: Block or rate-limit source IP at firewall/WAF",
+      "2026-03-23T22:51:50.214733Z - Recommended action 3: Force password reset and verify MFA enrollment"
+    ]
+  },
+  {
+    "alert_id": "ALERT-561F445A71",
+    "timestamp": "2026-03-23T22:51:50.214760Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-btun",
+      "account_name": "billy.tun",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-btun",
+        "Account_Name": "billy.tun",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-btun by billy.tun",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214760Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214760Z - Suspicious PowerShell execution on host wrk-btun by account billy.tun; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214760Z - AI summary: Suspicious PowerShell Execution on wrk-btun by billy.tun",
+      "2026-03-23T22:51:50.214760Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214760Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214760Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214760Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-F4FE281650",
+    "timestamp": "2026-03-23T22:51:50.214791Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-btun",
+      "account_name": "billy.tun",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-btun",
+        "Account_Name": "billy.tun",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-btun by billy.tun",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214791Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214791Z - Suspicious PowerShell execution on host wrk-btun by account billy.tun; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214791Z - AI summary: Suspicious PowerShell Execution on wrk-btun by billy.tun",
+      "2026-03-23T22:51:50.214791Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214791Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214791Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214791Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-933FC43975",
+    "timestamp": "2026-03-23T22:51:50.214809Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-btun",
+      "account_name": "WRK-BTUN$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-btun",
+        "Account_Name": "WRK-BTUN$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-btun",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214809Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214809Z - Suspicious PowerShell execution on host wrk-btun by account WRK-BTUN$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214809Z - AI summary: Suspicious PowerShell Execution on wrk-btun",
+      "2026-03-23T22:51:50.214809Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214809Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214809Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214809Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-86557B7538",
+    "timestamp": "2026-03-23T22:51:50.214824Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-btun",
+      "account_name": "billy.tun",
+      "process": "C:\\Windows\\System32\\schtasks.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-btun",
+        "Account_Name": "billy.tun",
+        "New_Process_Name": "C:\\Windows\\System32\\schtasks.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-btun by billy.tun",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214824Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214824Z - Suspicious PowerShell execution on host wrk-btun by account billy.tun; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214824Z - AI summary: Suspicious PowerShell Execution on wrk-btun by billy.tun",
+      "2026-03-23T22:51:50.214824Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214824Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214824Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214824Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-7809818C36",
+    "timestamp": "2026-03-23T22:51:50.214841Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-klagerf",
+      "account_name": "WRK-KLAGERF$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-klagerf",
+        "Account_Name": "WRK-KLAGERF$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-klagerf",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214841Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214841Z - Suspicious PowerShell execution on host wrk-klagerf by account WRK-KLAGERF$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214841Z - AI summary: Suspicious PowerShell Execution on wrk-klagerf",
+      "2026-03-23T22:51:50.214841Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214841Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214841Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214841Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-8459026FAA",
+    "timestamp": "2026-03-23T22:51:50.214857Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-klagerf",
+      "account_name": "service3",
+      "process": "C:\\Windows\\System32\\schtasks.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-klagerf",
+        "Account_Name": "service3",
+        "New_Process_Name": "C:\\Windows\\System32\\schtasks.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-klagerf",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214857Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214857Z - Suspicious PowerShell execution on host wrk-klagerf by account service3; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214857Z - AI summary: Suspicious PowerShell Execution on wrk-klagerf",
+      "2026-03-23T22:51:50.214857Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214857Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214857Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214857Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-39057969C8",
+    "timestamp": "2026-03-23T22:51:50.214871Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-btun",
+      "account_name": "WRK-BTUN$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-btun",
+        "Account_Name": "WRK-BTUN$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-btun",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214871Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214871Z - Suspicious PowerShell execution on host wrk-btun by account WRK-BTUN$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214871Z - AI summary: Suspicious PowerShell Execution on wrk-btun",
+      "2026-03-23T22:51:50.214871Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214871Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214871Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214871Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-D4AD100E3F",
+    "timestamp": "2026-03-23T22:51:50.214886Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "wrk-klagerf",
+      "account_name": "WRK-KLAGERF$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "wrk-klagerf",
+        "Account_Name": "WRK-KLAGERF$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on wrk-klagerf",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214886Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214886Z - Suspicious PowerShell execution on host wrk-klagerf by account WRK-KLAGERF$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214886Z - AI summary: Suspicious PowerShell Execution on wrk-klagerf",
+      "2026-03-23T22:51:50.214886Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214886Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214886Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214886Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-11B436A4BD",
+    "timestamp": "2026-03-23T22:51:50.214902Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "venus",
+      "account_name": "VENUS$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "venus",
+        "Account_Name": "VENUS$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on host venus",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214902Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214902Z - Suspicious PowerShell execution on host venus by account VENUS$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214902Z - AI summary: Suspicious PowerShell Execution on host venus",
+      "2026-03-23T22:51:50.214902Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214902Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214902Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214902Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-3714605DF9",
+    "timestamp": "2026-03-23T22:51:50.214917Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "mercury",
+      "account_name": "MERCURY$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "mercury",
+        "Account_Name": "MERCURY$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on mercury",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214917Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214917Z - Suspicious PowerShell execution on host mercury by account MERCURY$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214917Z - AI summary: Suspicious PowerShell Execution on mercury",
+      "2026-03-23T22:51:50.214917Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214917Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214917Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214917Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-38E37641FC",
+    "timestamp": "2026-03-23T22:51:50.214932Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "mercury",
+      "account_name": "MERCURY$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "mercury",
+        "Account_Name": "MERCURY$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on mercury",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214932Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214932Z - Suspicious PowerShell execution on host mercury by account MERCURY$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214932Z - AI summary: Suspicious PowerShell Execution on mercury",
+      "2026-03-23T22:51:50.214932Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214932Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214932Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214932Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-36D9FD8377",
+    "timestamp": "2026-03-23T22:51:50.214948Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "venus",
+      "account_name": "VENUS$",
+      "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "venus",
+        "Account_Name": "VENUS$",
+        "New_Process_Name": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on host venus",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214948Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214948Z - Suspicious PowerShell execution on host venus by account VENUS$; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214948Z - AI summary: Suspicious PowerShell Execution on host venus",
+      "2026-03-23T22:51:50.214948Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214948Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214948Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214948Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-81C33671AC",
+    "timestamp": "2026-03-23T22:51:50.214962Z",
+    "detection_type": "Suspicious PowerShell Execution",
+    "severity": "low",
+    "mitre_technique": "T1059.001",
+    "entities": {
+      "host": "venus",
+      "account_name": "service3",
+      "process": "C:\\Windows\\System32\\schtasks.exe",
+      "parent_process": ""
+    },
+    "evidence": {
+      "process_command_line": "[REDACTED]",
+      "event_count": 1,
+      "raw_row": {
+        "host": "venus",
+        "Account_Name": "service3",
+        "New_Process_Name": "C:\\Windows\\System32\\schtasks.exe",
+        "Parent_Process_Name": "",
+        "Process_Command_Line": "[REDACTED]"
+      }
+    },
+    "rule_confidence": 0.6,
+    "ai_confidence": 0.6,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Isolate host if command indicates remote payload execution",
+      "Collect PowerShell script block logs and parent process chain",
+      "Disable/rotate affected credentials and hunt for same command pattern"
+    ],
+    "ai_summary": {
+      "what_happened": "Suspicious PowerShell Execution on host venus",
+      "why_it_matters": "Potential remote payload execution detected",
+      "top_3_actions": [
+        "Isolate host if command indicates remote payload execution",
+        "Collect PowerShell script block logs and parent process chain",
+        "Disable/rotate affected credentials and hunt for same command pattern"
+      ],
+      "mitre_mapping": [
+        "T1059.001"
+      ],
+      "confidence": 0.6
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214962Z - Alert triggered: Suspicious PowerShell Execution (LOW)",
+      "2026-03-23T22:51:50.214962Z - Suspicious PowerShell execution on host venus by account service3; command context: [REDACTED]",
+      "2026-03-23T22:51:50.214962Z - AI summary: Suspicious PowerShell Execution on host venus",
+      "2026-03-23T22:51:50.214962Z - Risk context: Potential remote payload execution detected",
+      "2026-03-23T22:51:50.214962Z - Recommended action 1: Isolate host if command indicates remote payload execution",
+      "2026-03-23T22:51:50.214962Z - Recommended action 2: Collect PowerShell script block logs and parent process chain",
+      "2026-03-23T22:51:50.214962Z - Recommended action 3: Disable/rotate affected credentials and hunt for same command pattern"
+    ]
+  },
+  {
+    "alert_id": "ALERT-49DC50F38F",
+    "timestamp": "2026-03-23T22:51:50.214986Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 8,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 00:00:00.000 Eastern Daylight Time",
+        "host_count": "8",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "40"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert with high confidence in detection",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.214986Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.214986Z - Network logon spread detected from ::1 using account - across host_count=8",
+      "2026-03-23T22:51:50.214986Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.214986Z - Risk context: High severity alert with high confidence in detection",
+      "2026-03-23T22:51:50.214986Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.214986Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.214986Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-8FFF08820F",
+    "timestamp": "2026-03-23T22:51:50.215006Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 7,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 07:00:00.000 Eastern Daylight Time",
+        "host_count": "7",
+        "hosts": "mercury venus wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "40"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert with high confidence in detection",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215006Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215006Z - Network logon spread detected from ::1 using account - across host_count=7",
+      "2026-03-23T22:51:50.215006Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215006Z - Risk context: High severity alert with high confidence in detection",
+      "2026-03-23T22:51:50.215006Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215006Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215006Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-CEFAD55E3F",
+    "timestamp": "2026-03-23T22:51:50.215022Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-aturing wrk-bgist wrk-btun wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 7,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-23 23:00:00.000 Eastern Daylight Time",
+        "host_count": "7",
+        "hosts": "mercury venus wrk-aturing wrk-bgist wrk-btun wrk-ghoppy wrk-klagerf",
+        "event_count": "38"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential security breach",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215022Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215022Z - Network logon spread detected from ::1 using account - across host_count=7",
+      "2026-03-23T22:51:50.215022Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215022Z - Risk context: High severity alert indicating potential security breach",
+      "2026-03-23T22:51:50.215022Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215022Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215022Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-B144D0352A",
+    "timestamp": "2026-03-23T22:51:50.215037Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "10.0.2.107",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 7,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "10.0.2.107",
+        "_time": "2017-08-23 23:00:00.000 Eastern Daylight Time",
+        "host_count": "7",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential unauthorized access to network resources.",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215037Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215037Z - Network logon spread detected from 10.0.2.107 using account - across host_count=7",
+      "2026-03-23T22:51:50.215037Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215037Z - Risk context: High severity alert indicating potential unauthorized access to network resources.",
+      "2026-03-23T22:51:50.215037Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215037Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215037Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-066016DFD1",
+    "timestamp": "2026-03-23T22:51:50.215052Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "10.0.2.107",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 7,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "10.0.2.107",
+        "_time": "2017-08-26 01:00:00.000 Eastern Daylight Time",
+        "host_count": "7",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",
+        "event_count": "23"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential security breach",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215052Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215052Z - Network logon spread detected from 10.0.2.107 using account - across host_count=7",
+      "2026-03-23T22:51:50.215052Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215052Z - Risk context: High severity alert indicating potential security breach",
+      "2026-03-23T22:51:50.215052Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215052Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215052Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-0F56F4653C",
+    "timestamp": "2026-03-23T22:51:50.215066Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "billy.tun",
+      "source_ip": "10.0.2.107",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 7,
+      "raw_row": {
+        "Account_Name": "billy.tun",
+        "Source_Network_Address": "10.0.2.107",
+        "_time": "2017-08-23 23:00:00.000 Eastern Daylight Time",
+        "host_count": "7",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",
+        "event_count": "15"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215066Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215066Z - Network logon spread detected from 10.0.2.107 using account billy.tun across host_count=7",
+      "2026-03-23T22:51:50.215066Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215066Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215066Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215066Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215066Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-26F04EA5F4",
+    "timestamp": "2026-03-23T22:51:50.215083Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "billy.tun",
+      "source_ip": "10.0.2.107",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 7,
+      "raw_row": {
+        "Account_Name": "billy.tun",
+        "Source_Network_Address": "10.0.2.107",
+        "_time": "2017-08-26 01:00:00.000 Eastern Daylight Time",
+        "host_count": "7",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-fmaltes wrk-klagerf",
+        "event_count": "10"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential security breach",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215083Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215083Z - Network logon spread detected from 10.0.2.107 using account billy.tun across host_count=7",
+      "2026-03-23T22:51:50.215083Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215083Z - Risk context: High severity alert indicating potential security breach",
+      "2026-03-23T22:51:50.215083Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215083Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215083Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-72C1B3F924",
+    "timestamp": "2026-03-23T22:51:50.215107Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-ghoppy"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-18 19:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist wrk-ghoppy",
+        "event_count": "39"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215107Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215107Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215107Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215107Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215107Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215107Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215107Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-303173078B",
+    "timestamp": "2026-03-23T22:51:50.215122Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-aturing wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 01:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury wrk-aturing wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "39"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert with potential security impact",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215122Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215122Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215122Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215122Z - Risk context: High severity alert with potential security impact",
+      "2026-03-23T22:51:50.215122Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215122Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215122Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-28939CEEE9",
+    "timestamp": "2026-03-23T22:51:50.215136Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-aturing wrk-bgist wrk-btun wrk-fmaltes wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-18 20:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury wrk-aturing wrk-bgist wrk-btun wrk-fmaltes wrk-klagerf",
+        "event_count": "38"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential unauthorized access to network resources.",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215136Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215136Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215136Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215136Z - Risk context: High severity alert indicating potential unauthorized access to network resources.",
+      "2026-03-23T22:51:50.215136Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215136Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215136Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-E5AE7835EF",
+    "timestamp": "2026-03-23T22:51:50.215151Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-18 22:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "38"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert with high confidence in detection",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215151Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215151Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215151Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215151Z - Risk context: High severity alert with high confidence in detection",
+      "2026-03-23T22:51:50.215151Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215151Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215151Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-95A0C4540B",
+    "timestamp": "2026-03-23T22:51:50.215164Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-aturing wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 03:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury wrk-aturing wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "38"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215164Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215164Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215164Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215164Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215164Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215164Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215164Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-94B385E538",
+    "timestamp": "2026-03-23T22:51:50.215180Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 05:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury wrk-aturing wrk-bgist wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "38"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215180Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215180Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215180Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215180Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215180Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215180Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215180Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-870227E5F3",
+    "timestamp": "2026-03-23T22:51:50.215194Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-26 02:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-ghoppy wrk-klagerf",
+        "event_count": "38"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215194Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215194Z - Network logon spread detected from ::1 using account - across host_count=6",
+      "2026-03-23T22:51:50.215194Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215194Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215194Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215194Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215194Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-37330191B0",
+    "timestamp": "2026-03-23T22:51:50.215215Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "service3",
+      "source_ip": "10.0.2.107",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-fmaltes wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 6,
+      "raw_row": {
+        "Account_Name": "service3",
+        "Source_Network_Address": "10.0.2.107",
+        "_time": "2017-08-23 23:00:00.000 Eastern Daylight Time",
+        "host_count": "6",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-fmaltes wrk-klagerf",
+        "event_count": "9"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215215Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215215Z - Network logon spread detected from 10.0.2.107 using account service3 across host_count=6",
+      "2026-03-23T22:51:50.215215Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215215Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215215Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215215Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215215Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-0BED67C9EF",
+    "timestamp": "2026-03-23T22:51:50.215230Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "-",
+      "hosts": [
+        "mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "-",
+        "_time": "2017-08-18 22:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy",
+        "event_count": "95"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential security breach",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215230Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215230Z - Network logon spread detected from - using account - across host_count=5",
+      "2026-03-23T22:51:50.215230Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215230Z - Risk context: High severity alert indicating potential security breach",
+      "2026-03-23T22:51:50.215230Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215230Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215230Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-B847163FA5",
+    "timestamp": "2026-03-23T22:51:50.215244Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "-",
+      "hosts": [
+        "mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "-",
+        "_time": "2017-08-19 06:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury wrk-abungst wrk-bgist wrk-fmaltes wrk-ghoppy",
+        "event_count": "95"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential unauthorized access to network resources.",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215244Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215244Z - Network logon spread detected from - using account - across host_count=5",
+      "2026-03-23T22:51:50.215244Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215244Z - Risk context: High severity alert indicating potential unauthorized access to network resources.",
+      "2026-03-23T22:51:50.215244Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215244Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215244Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-93F37DC953",
+    "timestamp": "2026-03-23T22:51:50.215258Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-bgist"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-18 17:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-bgist",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215258Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215258Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215258Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215258Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215258Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215258Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215258Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-17EF105D4B",
+    "timestamp": "2026-03-23T22:51:50.215271Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-18 18:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential unauthorized access to network resources.",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215271Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215271Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215271Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215271Z - Risk context: High severity alert indicating potential unauthorized access to network resources.",
+      "2026-03-23T22:51:50.215271Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215271Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215271Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-0F70D94F1B",
+    "timestamp": "2026-03-23T22:51:50.215291Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-bgist wrk-btun"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 04:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury venus wrk-abungst wrk-bgist wrk-btun",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215291Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215291Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215291Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215291Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215291Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215291Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215291Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-1D28060BB0",
+    "timestamp": "2026-03-23T22:51:50.215306Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-aturing wrk-btun"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 06:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury venus wrk-abungst wrk-aturing wrk-btun",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215306Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215306Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215306Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215306Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215306Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215306Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215306Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-0E019E99FE",
+    "timestamp": "2026-03-23T22:51:50.215320Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-aturing wrk-bgist wrk-btun wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 08:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury wrk-aturing wrk-bgist wrk-btun wrk-klagerf",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential unauthorized access to network resources.",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215320Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215320Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215320Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215320Z - Risk context: High severity alert indicating potential unauthorized access to network resources.",
+      "2026-03-23T22:51:50.215320Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215320Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215320Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-C63E461D08",
+    "timestamp": "2026-03-23T22:51:50.215334Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-fmaltes wrk-ghoppy"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-19 09:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury venus wrk-abungst wrk-fmaltes wrk-ghoppy",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215334Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215334Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215334Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215334Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215334Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215334Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215334Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-824B43FEFE",
+    "timestamp": "2026-03-23T22:51:50.215348Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury wrk-abungst wrk-bgist wrk-btun wrk-fmaltes"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-26 03:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury wrk-abungst wrk-bgist wrk-btun wrk-fmaltes",
+        "event_count": "37"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215348Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215348Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215348Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215348Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215348Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215348Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215348Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-4A7886B725",
+    "timestamp": "2026-03-23T22:51:50.215362Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "::1",
+      "hosts": [
+        "mercury venus wrk-abungst wrk-btun wrk-ghoppy"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "::1",
+        "_time": "2017-08-18 21:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury venus wrk-abungst wrk-btun wrk-ghoppy",
+        "event_count": "35"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "Potential security breach, investigate further",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215362Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215362Z - Network logon spread detected from ::1 using account - across host_count=5",
+      "2026-03-23T22:51:50.215362Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215362Z - Risk context: Potential security breach, investigate further",
+      "2026-03-23T22:51:50.215362Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215362Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215362Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  },
+  {
+    "alert_id": "ALERT-532B2BB29E",
+    "timestamp": "2026-03-23T22:51:50.215377Z",
+    "detection_type": "Possible Lateral Movement",
+    "severity": "high",
+    "mitre_technique": "T1021",
+    "entities": {
+      "account_name": "-",
+      "source_ip": "-",
+      "hosts": [
+        "mercury wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf"
+      ]
+    },
+    "evidence": {
+      "host_count": 5,
+      "raw_row": {
+        "Account_Name": "-",
+        "Source_Network_Address": "-",
+        "_time": "2017-08-25 01:00:00.000 Eastern Daylight Time",
+        "host_count": "5",
+        "hosts": "mercury wrk-btun wrk-fmaltes wrk-ghoppy wrk-klagerf",
+        "event_count": "5"
+      }
+    },
+    "rule_confidence": 0.88,
+    "ai_confidence": 0.88,
+    "status": "open",
+    "analyst_label": "Needs Review",
+    "recommended_actions": [
+      "Validate account activity across listed hosts",
+      "Isolate suspected pivot host(s)",
+      "Review 4624/4672 chain and disable compromised credentials"
+    ],
+    "ai_summary": {
+      "what_happened": "Possible Lateral Movement detected",
+      "why_it_matters": "High severity alert indicating potential security breach",
+      "top_3_actions": [
+        "Validate account activity across listed hosts",
+        "Isolate suspected pivot host(s)",
+        "Review 4624/4672 chain and disable compromised credentials"
+      ],
+      "mitre_mapping": [
+        "T1021"
+      ],
+      "confidence": 0.88
+    },
+    "investigation_timeline": [
+      "2026-03-23T22:51:50.215377Z - Alert triggered: Possible Lateral Movement (HIGH)",
+      "2026-03-23T22:51:50.215377Z - Network logon spread detected from - using account - across host_count=5",
+      "2026-03-23T22:51:50.215377Z - AI summary: Possible Lateral Movement detected",
+      "2026-03-23T22:51:50.215377Z - Risk context: High severity alert indicating potential security breach",
+      "2026-03-23T22:51:50.215377Z - Recommended action 1: Validate account activity across listed hosts",
+      "2026-03-23T22:51:50.215377Z - Recommended action 2: Isolate suspected pivot host(s)",
+      "2026-03-23T22:51:50.215377Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "ticket_id": "TICKET-ALERT-0E019E99FE",
+  "alert_id": "ALERT-0E019E99FE",
+  "title": "Possible Lateral Movement - HIGH",
+  "status": "open",
+  "severity": "high",
+  "mitre_id": "T1021",
+  "iocs": {
+    "source_ip": "::1",
+    "account_name": "-",
+    "hosts": [
+      "mercury wrk-aturing wrk-bgist wrk-btun wrk-klagerf"
+    ]
+  },
+  "rule_confidence": 0.88,
+  "ai_confidence": 0.88,
+  "summary": {
+    "what_happened": "Possible Lateral Movement detected",
+    "why_it_matters": "High severity alert indicating potential unauthorized access to network resources."
+  },
+  "recommended_actions": [
+    "Validate account activity across listed hosts",
+    "Isolate suspected pivot host(s)",
+    "Review 4624/4672 chain and disable compromised credentials"
+  ],
+  "analyst": {
+    "label": "Needs Review",
+    "note": ""
+  },
+  "evidence": {
+    "host_count": 5,
+    "raw_row": {
+      "Account_Name": "-",
+      "Source_Network_Address": "::1",
+      "_time": "2017-08-19 08:00:00.000 Eastern Daylight Time",
+      "host_count": "5",
+      "hosts": "mercury wrk-aturing wrk-bgist wrk-btun wrk-klagerf",
+      "event_count": "37"
+    }
+  },
+  "timeline": [
+    "2026-03-23T22:51:50.215320Z - Alert triggered: Possible Lateral Movement (HIGH)",
+    "2026-03-23T22:51:50.215320Z - Network logon spread detected from ::1 using account - across host_count=5",
+    "2026-03-23T22:51:50.215320Z - AI summary: Possible Lateral Movement detected",
+    "2026-03-23T22:51:50.215320Z - Risk context: High severity alert indicating potential unauthorized access to network resources.",
+    "2026-03-23T22:51:50.215320Z - Recommended action 1: Validate account activity across listed hosts",
+    "2026-03-23T22:51:50.215320Z - Recommended action 2: Isolate suspected pivot host(s)",
+    "2026-03-23T22:51:50.215320Z - Recommended action 3: Review 4624/4672 chain and disable compromised credentials"
+  ],
+  "timestamp": "2026-03-23T22:51:50.215320Z"
+}
